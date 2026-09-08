@@ -47,6 +47,10 @@ Requirements:
     # Yasb
     Variable Name: YASB_CONFIG_HOME
     Variable Value: C:\Users\<Your User>\Neps-Windows-Usability-Config\.config\yasb
+
+    # whkd
+    Variable Name: WHKD_CONFIG_HOME
+    Variable Value: C:\Users\<Your User>\Neps-Windows-Usability-Config\.config\whkd
   ```
 
 4. Enable Autostart

@@ -153,3 +153,25 @@ Current thread 0x00002d08 (most recent call first):
 2026-09-08 08:15:32,494 [WARNING] [UpdateChecker] [root/update_service.py:300]: Network error checking for updates: [Errno 11001] getaddrinfo failed
 2026-09-08 08:15:32,495 [WARNING] [UpdateChecker] [root/update_service.py:430]: Background update check failed: <urlopen error [Errno 11001] getaddrinfo failed>
 2026-09-08 08:16:37,105 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-6113eab1-ab1a-11f1-a6c7-a85e45552a3e
+2026-09-08 11:08:06,872 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-08 11:08:06,873 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-08 11:08:06,873 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-08 11:08:07,440 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-08 11:08:07,945 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-08 11:08:07,947 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-08 11:08:07,947 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-08 11:08:07,949 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-08 11:08:07,949 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-08 11:08:08,038 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+2026-09-08 11:08:08,038 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-08 11:08:08,047 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-08 11:08:08,149 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+2026-09-08 11:11:22,174 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-09-08 11:11:22,174 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-09-08 11:11:25,184 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+2026-09-08 11:11:25,234 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-08 11:11:30,320 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+2026-09-08 11:14:37,630 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-09-08 11:14:37,630 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-09-08 11:14:40,642 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+2026-09-08 11:14:40,702 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
