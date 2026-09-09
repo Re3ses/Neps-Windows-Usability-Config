@@ -175,3 +175,184 @@ Current thread 0x00002d08 (most recent call first):
 2026-09-08 11:14:37,630 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
 2026-09-08 11:14:40,642 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
 2026-09-08 11:14:40,702 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+2026-09-08 11:15:31,219 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-09-08 11:15:31,220 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-09-08 11:15:34,234 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+2026-09-08 11:15:34,288 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-842d5ac5-ab32-11f1-a760-a85e45552a3e
+Windows fatal exception: code 0x800706f7
+
+Thread 0x00000324 [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x00002bfc [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000024e4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x00004798 [Thread-4] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000245c [Thread-5] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004528 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x00003f9c [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00003a2c [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00003aa4 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00001c08 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Current thread 0x00002148 (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 100 in main
+  File "main.py", line 203 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+2026-09-08 13:39:17,765 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-08 13:39:17,869 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-08 13:39:17,875 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-08 13:39:18,133 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-08 13:39:18,135 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-08 13:39:18,139 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-08 13:39:18,140 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-08 13:39:18,447 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-08 13:39:18,447 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-08 13:39:18,447 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-08 13:39:19,138 [ERROR] [MainThread] [root/widget_builder.py:90]: No type specified for widget 'open_meteo'
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 42, in _build_widget
+KeyError: 'type'
+2026-09-08 13:39:19,302 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-08 13:39:19,565 [ERROR] [MainThread] [root/widget_builder.py:90]: No type specified for widget 'open_meteo'
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 42, in _build_widget
+KeyError: 'type'
+2026-09-08 13:39:19,758 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-08 13:39:19,759 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-08 13:39:19,759 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-08 13:39:19,759 [ERROR] [MainThread] [root/widget_builder.py:138]: Failed to import widget(s) due to missing widget type(s)  - open_meteo
+2026-09-08 13:39:19,762 [INFO] [Dummy-4] [root/event_listener.py:54]: Created named pipe yasb-a365ff53-ab47-11f1-8958-a85e45552a3e
+2026-09-08 13:39:19,804 [INFO] [Dummy-5] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-08 13:39:19,821 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-08 13:39:19,822 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-08 13:39:19,886 [INFO] [Dummy-4] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-a365ff53-ab47-11f1-8958-a85e45552a3e
+2026-09-08 13:39:19,891 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-08 13:39:52,108 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-08 13:39:52,214 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-08 13:39:52,219 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-08 13:39:52,562 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-08 13:39:52,562 [INFO] [Dummy-5] [root/windows_notification.py:97]: Notification service stopped
+2026-09-08 13:39:52,565 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-08 13:39:52,567 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-08 13:39:52,782 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-08 13:39:52,782 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-08 13:39:52,783 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-08 13:39:52,906 [WARNING] [MainThread] [root/widget_builder.py:39]: No widget config could be found for widget 'open_meteo
+2026-09-08 13:39:53,058 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-08 13:39:53,568 [WARNING] [MainThread] [root/widget_builder.py:36]: Ignoring construction of invalid widget 'clock'
+2026-09-08 13:39:53,569 [WARNING] [MainThread] [root/widget_builder.py:36]: Ignoring construction of invalid widget 'open_meteo'
+2026-09-08 13:39:53,735 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-08 13:39:53,735 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-08 13:39:53,736 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-08 13:39:53,736 [ERROR] [MainThread] [root/widget_builder.py:100]: Failed to add undefined widget(s)  - The widget "open_meteo" is undefined.
+2026-09-08 13:39:53,739 [INFO] [Dummy-4] [root/event_listener.py:54]: Created named pipe yasb-b7a670db-ab47-11f1-8f4a-a85e45552a3e
+2026-09-08 13:39:53,767 [INFO] [Dummy-5] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-08 13:39:53,777 [ERROR] [MainThread] [root/widget_builder.py:114]: Failed to validate widget(s) due to invalid options  - clock
+      callbacks:
+        open_meteo:
+        - Extra inputs are not permitted
+      
+2026-09-08 13:39:53,791 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-08 13:39:53,792 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-08 13:39:53,904 [INFO] [Dummy-4] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-b7a670db-ab47-11f1-8f4a-a85e45552a3e
+2026-09-08 13:39:53,904 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-08 13:40:10,146 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-08 13:40:10,261 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-08 13:40:10,266 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-08 13:40:10,605 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-08 13:40:10,606 [INFO] [Dummy-5] [root/windows_notification.py:97]: Notification service stopped
+2026-09-08 13:40:10,609 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-08 13:40:10,610 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-08 13:40:10,823 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-08 13:40:10,824 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-08 13:40:10,824 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-08 13:40:11,452 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-08 13:40:11,916 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-08 13:40:11,917 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-08 13:40:11,917 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-08 13:40:11,918 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-08 13:40:11,918 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-08 13:40:12,019 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c27caa27-ab47-11f1-941d-a85e45552a3e
+2026-09-08 13:40:12,025 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-08 13:40:12,031 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-08 13:40:12,120 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c27caa27-ab47-11f1-941d-a85e45552a3e
+2026-09-08 13:40:12,122 [INFO] [MainThread] [root/open_meteo.py:133]: No saved location for open_meteo. Awaiting user setup.
+2026-09-08 13:40:12,128 [INFO] [MainThread] [root/open_meteo.py:133]: No saved location for open_meteo. Awaiting user setup.
+2026-09-08 13:40:51,920 [INFO] [MainThread] [open_meteo/location.py:121]: Deleted location for open_meteo
+2026-09-08 16:58:38,661 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-08 16:58:38,687 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-08 16:58:38,950 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-08 16:58:38,959 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-09 08:35:03,758 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-09 08:35:03,759 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-09 08:35:03,759 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-09 08:35:04,525 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-09 08:35:04,833 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-09 08:35:04,833 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-09 08:35:04,833 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-09 08:35:04,834 [INFO] [Dummy-4] [root/event_listener.py:54]: Created named pipe yasb-4d071d20-abe6-11f1-bfa0-a85e45552a3e
+2026-09-09 08:35:04,836 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-09 08:35:04,836 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-09 08:35:04,882 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-09 08:35:04,888 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-09 08:35:04,929 [WARNING] [Dummy-4] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-09 08:35:09,982 [INFO] [Dummy-4] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-4d071d20-abe6-11f1-bfa0-a85e45552a3e
+2026-09-09 08:39:44,842 [WARNING] [Dummy-4] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-09-09 08:39:44,842 [INFO] [Dummy-4] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-09-09 08:39:47,850 [INFO] [Dummy-4] [root/event_listener.py:54]: Created named pipe yasb-4d071d20-abe6-11f1-bfa0-a85e45552a3e
+2026-09-09 08:39:47,917 [WARNING] [Dummy-4] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-09 08:39:52,971 [INFO] [Dummy-4] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-4d071d20-abe6-11f1-bfa0-a85e45552a3e

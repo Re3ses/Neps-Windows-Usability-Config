@@ -5,10 +5,10 @@
 
 /* Root Variables */
 :root {
-    --yasb-bar-bg: rgba(77, 83, 130, 0.60);
+    --yasb-bar-bg: rgba(77, 83, 130, 0.3);
     --yasb-surface-alt: rgb(61, 61, 61);
     --yasb-bar-border: #303030;
-    --yasb-popup-bg: rgba(36, 36, 36, 0.60);
+    --yasb-popup-bg: rgba(36, 36, 36, 0.6);
     --yasb-dialog-bg: rgb(43, 43, 43);
     --yasb-dialog-surface: rgb(32, 32, 32);
     --yasb-white-alpha-03: rgba(255, 255, 255, 0.03);
@@ -52,6 +52,9 @@
     padding: 0px 12px;
     margin: 0px 10px;
     border-radius: 15px;
+    border-width: 2px;
+    border-color: var(--yasb-accent);
+    border-style: solid;
 }
 
 /* Tooltip */
@@ -64,7 +67,7 @@
     font-family: var(--system-font);
     font-weight: 600;
     margin-top: 4px;
-    border:1px solid var(--yasb-tooltip-border);
+    border: 1px solid var(--yasb-tooltip-border);
 }
 
 /* Context Menu */
@@ -97,7 +100,7 @@
 .context-menu::item:selected,
 .context-menu .menu-checkbox:hover {
     background-color: var(--yasb-white-alpha-10);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .context-menu::separator {
     height: 1px;
@@ -147,7 +150,7 @@
     padding: 0px 6px;
     margin: 4px 0;
     border-radius: 4px;
-    transition: background-color 0.1s
+    transition: background-color 0.1s;
 }
 
 .widget .icon {
@@ -243,7 +246,7 @@
 .clock-popup.timer .clock-popup-footer,
 .clock-popup.alarm .clock-popup-footer {
     padding: 16px;
-    background-color: var(--yasb-dialog-surface)
+    background-color: var(--yasb-dialog-surface);
 }
 .clock-popup .clock-label-timer {
     font-size: 13px;
@@ -284,7 +287,7 @@
 }
 .clock-popup .button.save:hover,
 .clock-popup .button.start:hover {
-    background-color: var(--yasb-accent-hover)
+    background-color: var(--yasb-accent-hover);
 }
 .clock-popup .button.is-alarm-enabled {
     background-color: var(--yasb-accent);
@@ -563,7 +566,7 @@
 .cpu-popup .header .pin-btn {
     font-size: 14px;
     background: transparent;
-    font-family: 'Segoe Fluent Icons';
+    font-family: "Segoe Fluent Icons";
     border: none;
     padding: 6px;
     color: var(--yasb-fg-muted);
@@ -638,7 +641,7 @@
 .memory-popup .header .pin-btn {
     font-size: 14px;
     background: transparent;
-    font-family: 'Segoe Fluent Icons';
+    font-family: "Segoe Fluent Icons";
     border: none;
     padding: 6px;
     color: var(--yasb-fg-muted);
@@ -707,7 +710,7 @@
     color: #9498a8;
     padding: 0 4px;
     margin: 0;
-    font-family: 'Segoe Fluent Icons';
+    font-family: "Segoe Fluent Icons";
     font-weight: 400;
 }
 .media-widget .btn:hover {
@@ -729,7 +732,7 @@
     border: none;
 }
 .media-widget .progress-bar::chunk {
-    background-color: #0078D4ee;
+    background-color: #0078d4ee;
     border-radius: 2px;
 }
 .media-menu {
@@ -761,7 +764,7 @@
     margin-top: 10px;
 }
 .media-menu .btn {
-    font-family: 'Segoe Fluent Icons';
+    font-family: "Segoe Fluent Icons";
     font-size: 14px;
     font-weight: 400;
     margin: 10px 2px 0px 2px;
@@ -844,7 +847,7 @@
 .media-menu .app-volume-container .unmute-button {
     font-size: 16px;
     color: #ffffff;
-    font-family: 'Segoe Fluent Icons';
+    font-family: "Segoe Fluent Icons";
     margin-top: 4px;
 }
 .media-menu .app-volume-container .unmute-button {
