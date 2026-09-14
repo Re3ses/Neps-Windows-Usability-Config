@@ -49,5 +49,17 @@
         }
       ]
     }
+  ],
+  "floating_applications": [
+    {
+      "kind": "Title",
+      "id": "Discord",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Sticky Notes",
+      "matching_strategy": "Contains"
+    }
   ]
 }

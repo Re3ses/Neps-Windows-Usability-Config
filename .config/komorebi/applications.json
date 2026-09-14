@@ -519,6 +519,13 @@
     ]
   },
   "Discord": {
+    "floating":   [
+      {
+        "kind": "Exe",
+        "id": "Discord.exe",
+        "matching_strategy": "Equals"
+      }
+    ],
     "tray_and_multi_window": [
       {
         "kind": "Exe",
