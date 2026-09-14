@@ -37,7 +37,11 @@
       "workspaces": [
         {
           "name": "I",
-          "layout": "Rows"
+          "layout": "Rows",
+          "layout_options": {
+            "row_ratios": [0.4]
+          },
+           "layout_flip": "Vertical"
         }
       ]
     }

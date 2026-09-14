@@ -1661,6 +1661,21 @@
       }
     ]
   },
+  "Minecraft": {
+    "floating": [
+      [
+        {"kind": "Exe",
+        "id": "Minecraft",
+        "matching_strategy": "Contains"
+        },
+        {
+          "kind": "Class",
+          "id": "Minecraft",
+          "matching_strategy": "Contains"
+        }
+      ]
+    ]
+  },
   "MobaXterm": {
     "manage": [
       [
