@@ -16,6 +16,10 @@
     "monocle_border": "Base08",
     "single_border": "Base0A"
   },
+  "display_index_preferences": {
+    "0": "HCS0238-5&2524e507&0&UID264",
+    "1": "HGC2380-5&2524e507&0&UID268"
+  },
   "monitors": [
     {
       "workspaces": [
@@ -25,11 +29,7 @@
         },
         {
           "name": "II",
-          "layout": "VerticalStack"
-        },
-        {
-          "name": "III",
-          "layout": "HorizontalStack"
+          "layout": "Columns"
         }
       ]
     },
@@ -37,15 +37,7 @@
       "workspaces": [
         {
           "name": "I",
-          "layout": "BSP"
-        },
-        {
-          "name": "II",
-          "layout": "VerticalStack"
-        },
-        {
-          "name": "III",
-          "layout": "HorizontalStack"
+          "layout": "Rows"
         }
       ]
     }
