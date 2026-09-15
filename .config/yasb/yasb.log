@@ -356,9 +356,44 @@ KeyError: 'type'
 2026-09-09 08:39:47,850 [INFO] [Dummy-4] [root/event_listener.py:54]: Created named pipe yasb-4d071d20-abe6-11f1-bfa0-a85e45552a3e
 2026-09-09 08:39:47,917 [WARNING] [Dummy-4] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
 2026-09-09 08:39:52,971 [INFO] [Dummy-4] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-4d071d20-abe6-11f1-bfa0-a85e45552a3e
+<<<<<<< HEAD
 Windows fatal exception: code 0x8007072c
 
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+2026-09-11 20:05:01,058 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-11 20:05:01,059 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-11 20:05:01,059 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-11 20:05:01,507 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-11 20:05:01,693 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-11 20:05:01,693 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-11 20:05:01,693 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-11 20:05:01,695 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-11 20:05:01,695 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-11 20:05:01,747 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-044e2abb-add9-11f1-95ed-a8a15937b6a6
+2026-09-11 20:05:01,759 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-11 20:05:01,774 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-11 20:05:01,904 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-044e2abb-add9-11f1-95ed-a8a15937b6a6
+Windows fatal exception: code 0x800706f7
+
+Thread 0x00000224 [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000037d0 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x00001e14 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x0000173c [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -366,7 +401,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x00001850 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -375,7 +414,151 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
+=======
+Thread 0x0000168c [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x000017d0 [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00001ce0 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00002dc8 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003348 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Current thread 0x00002288 (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 100 in main
+  File "main.py", line 203 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+2026-09-11 22:29:57,153 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-09-11 22:29:57,155 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-09-11 22:29:57,262 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-11 22:29:57,792 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-11 22:29:57,796 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-11 22:29:57,798 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-11 22:29:57,800 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-11 22:29:57,927 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-11 22:29:57,929 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-11 22:29:57,929 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-11 22:29:58,562 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-11 22:29:59,026 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-11 22:29:59,026 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-11 22:29:59,027 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-11 22:29:59,028 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-11 22:29:59,028 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-11 22:29:59,169 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-4451f121-aded-11f1-9537-a8a15937b6a6
+2026-09-11 22:29:59,176 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-11 22:29:59,203 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-11 22:29:59,311 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-4451f121-aded-11f1-9537-a8a15937b6a6
+2026-09-11 23:00:00,538 [ERROR] [MainThread] [open_meteo/api.py:112]: Open-Meteo response error 503: ServiceUnavailableError 403
+2026-09-11 23:00:00,538 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-11 23:00:00,539 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-12 00:00:00,468 [ERROR] [MainThread] [open_meteo/api.py:112]: Open-Meteo response error 503: ServiceUnavailableError 403
+2026-09-12 00:00:00,469 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-12 00:00:00,470 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-12 06:00:00,527 [ERROR] [MainThread] [open_meteo/api.py:112]: Open-Meteo response error 503: ServiceUnavailableError 403
+2026-09-12 06:00:00,528 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-12 06:00:00,529 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-12 07:00:00,547 [ERROR] [MainThread] [open_meteo/api.py:112]: Open-Meteo response error 503: ServiceUnavailableError 403
+2026-09-12 07:00:00,547 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-12 07:00:00,548 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-12 14:28:05,788 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-09-12 14:28:05,790 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-09-12 14:28:05,924 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-12 14:28:06,272 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-12 14:28:06,289 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-12 14:28:06,301 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-12 14:28:06,302 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-12 14:28:06,913 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-12 14:28:06,913 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-12 14:28:06,913 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-12 14:28:07,906 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-12 14:28:08,210 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-12 14:28:08,210 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-12 14:28:08,210 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-12 14:28:08,212 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-12 14:28:08,212 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-12 14:28:08,213 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-1e8b2c45-ae73-11f1-9e14-a8a15937b6a6
+2026-09-12 14:28:08,324 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-12 14:28:08,353 [INFO] [Dummy-8] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-12 14:28:08,517 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-1e8b2c45-ae73-11f1-9e14-a8a15937b6a6
+2026-09-12 14:28:14,562 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-09-12 14:28:14,562 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-09-12 14:28:14,673 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-12 14:28:15,320 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-12 14:28:15,339 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-12 14:28:15,360 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-12 14:28:15,360 [INFO] [Dummy-8] [root/windows_notification.py:97]: Notification service stopped
+2026-09-12 14:28:15,369 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-12 14:28:15,369 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-12 14:28:15,370 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-12 14:28:15,370 [INFO] [MainThread] [root/main.py:48]: Waiting for previous YASB instance to exit...
+2026-09-12 14:28:15,896 [INFO] [MainThread] [root/main.py:74]: Previous instance exited, continuing startup.
+2026-09-12 14:28:16,640 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-12 14:28:17,196 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-12 14:28:17,197 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-12 14:28:17,197 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-12 14:28:17,199 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-12 14:28:17,200 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-12 14:28:17,201 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-23e67242-ae73-11f1-87a7-a8a15937b6a6
+2026-09-12 14:28:17,365 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-12 14:28:17,374 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-12 14:28:17,374 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-23e67242-ae73-11f1-87a7-a8a15937b6a6
+2026-09-12 16:24:43,493 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-12 16:24:43,493 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-12 16:24:43,505 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-12 16:24:43,544 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-12 16:25:41,867 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-12 16:25:41,868 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-12 16:25:41,869 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-12 16:25:43,169 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-12 16:25:43,595 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-12 16:25:43,595 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-12 16:25:43,595 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-12 16:25:43,596 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-12 16:25:43,596 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-12 16:25:43,598 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-8be179ca-ae83-11f1-be20-a8a15937b6a6
+2026-09-12 16:25:43,701 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-12 16:25:43,739 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-12 16:25:43,751 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-12 16:25:53,865 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-8be179ca-ae83-11f1-be20-a8a15937b6a6
+Windows fatal exception: code 0x800706f7
+
+Thread 0x00002b14 [Thread-4] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00002be0 [WindowsNotificationEventListener] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
@@ -383,44 +566,200 @@ Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
   File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
 
+<<<<<<< HEAD
 Thread 0x000045c8 [KomorebiEventListener] (most recent call first):
+=======
+Thread 0x00002b20 [KomorebiEventListener] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
 
+<<<<<<< HEAD
 Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002b4c [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x00001508 [Thread-5] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00002b30 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x00002a80 [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002a60 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002a50 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x00002a4c [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002750 (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 100 in main
+  File "main.py", line 203 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
+  File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+2026-09-13 07:35:49,495 [ERROR] [MainThread] [open_meteo/api.py:105]: No internet connection or host not found. Unable to fetch weather.
+2026-09-13 07:35:49,496 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-13 07:35:49,518 [WARNING] [MainThread] [root/open_meteo.py:865]: Error processing Open-Meteo data: Weather data is empty.
+2026-09-13 15:15:20,274 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-13 15:15:20,317 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-13 15:15:20,387 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-13 15:15:20,397 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-13 18:29:17,233 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-13 18:29:17,233 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-13 18:29:17,234 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-13 18:29:18,908 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-13 18:29:19,240 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-13 18:29:19,240 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-13 18:29:19,240 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-13 18:29:19,241 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-13 18:29:19,241 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-13 18:29:19,261 [INFO] [Dummy-7] [root/event_listener.py:54]: Created named pipe yasb-fa5cdefa-af5d-11f1-a94e-a8a15937b6a6
+2026-09-13 18:29:19,333 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-13 18:29:19,335 [INFO] [Dummy-6] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-13 18:29:19,713 [WARNING] [Dummy-7] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-13 18:29:25,657 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-09-13 18:29:25,657 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-09-13 18:29:25,764 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-13 18:29:26,341 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-13 18:29:26,342 [INFO] [Dummy-6] [root/windows_notification.py:97]: Notification service stopped
+2026-09-13 18:29:26,351 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-13 18:29:26,482 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-13 18:29:26,684 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-13 18:29:26,688 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-13 18:29:26,692 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-13 18:29:28,237 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-13 18:29:29,429 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-13 18:29:29,430 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-13 18:29:29,430 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-13 18:29:29,431 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-13 18:29:29,431 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-13 18:29:29,561 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-006fa6c9-af5e-11f1-8e06-a8a15937b6a6
+2026-09-13 18:29:29,570 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-13 18:29:29,989 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-13 18:29:30,133 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-13 18:29:35,187 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-006fa6c9-af5e-11f1-8e06-a8a15937b6a6
+2026-09-13 18:29:38,716 [INFO] [MainThread] [root/bar.py:153]: Screen geometry changed. Updating position for bar primary-bar on screen MH-246
+2026-09-13 18:29:42,670 [INFO] [MainThread] [root/bar.py:153]: Screen geometry changed. Updating position for bar primary-bar on screen MH-246
+Windows fatal exception: code 0x8007072c
+
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000031c8 [Thread-5] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
+
+Thread 0x0000163c [CpuWorker] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
+
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\aumid_icons.py", line 122 in get_icon_for_aumid
   File "D:\a\yasb\yasb\src\core\utils\win32\app_icons.py", line 134 in get_window_icon
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 348 in _update_window_title
@@ -433,7 +772,27 @@ Thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -441,7 +800,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -450,6 +813,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -467,35 +831,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002e9c (most recent call first):
+=======
+Thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\aumid_icons.py", line 122 in get_icon_for_aumid
   File "D:\a\yasb\yasb\src\core\utils\win32\app_icons.py", line 134 in get_window_icon
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 348 in _update_window_title
@@ -508,7 +895,27 @@ Thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -516,7 +923,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -525,6 +936,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -542,35 +954,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 200 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -582,7 +1017,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -590,7 +1045,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -599,6 +1058,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -616,35 +1076,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 200 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -656,7 +1139,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -664,7 +1167,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -673,6 +1180,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -690,35 +1198,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 207 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -730,7 +1261,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -738,7 +1289,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -747,6 +1302,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -764,35 +1320,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 207 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -804,7 +1383,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -812,7 +1411,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -821,6 +1424,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -838,35 +1442,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 220 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -878,7 +1505,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -886,7 +1533,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -895,6 +1546,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -912,35 +1564,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 220 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -952,7 +1627,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -960,7 +1655,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -969,6 +1668,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -986,35 +1686,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 228 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -1026,7 +1749,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -1034,7 +1777,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -1043,6 +1790,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -1060,35 +1808,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x00002e9c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\utils.py", line 228 in get_app_name_from_pid
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
@@ -1100,7 +1871,27 @@ Current thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -1108,7 +1899,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -1117,6 +1912,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -1134,35 +1930,58 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002e9c (most recent call first):
+=======
+Thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\aumid_icons.py", line 122 in get_icon_for_aumid
   File "D:\a\yasb\yasb\src\core\utils\win32\app_icons.py", line 134 in get_window_icon
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 348 in _update_window_title
@@ -1175,7 +1994,27 @@ Thread 0x00002e9c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x8007072c
 
+<<<<<<< HEAD
 Thread 0x00001aec [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -1183,7 +2022,11 @@ Thread 0x00001aec [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000a4c [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -1192,6 +2035,7 @@ Thread 0x00000a4c [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002070 [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -1209,34 +2053,54 @@ Thread 0x000036c0 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00002c38 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00000530 [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00002518 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00004b88 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002fc8 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002e9c (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\aumid_icons.py", line 122 in get_icon_for_aumid
   File "D:\a\yasb\yasb\src\core\utils\win32\app_icons.py", line 134 in get_window_icon
@@ -2212,6 +3076,9 @@ Thread 0x00004460 [CLIPipeServer] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
 Thread 0x0000273c (most recent call first):
+=======
+Thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\aumid_icons.py", line 122 in get_icon_for_aumid
   File "D:\a\yasb\yasb\src\core\utils\win32\app_icons.py", line 134 in get_window_icon
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 348 in _update_window_title
@@ -2224,7 +3091,27 @@ Thread 0x0000273c (most recent call first):
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
 Windows fatal exception: code 0x800706f7
 
+<<<<<<< HEAD
 Thread 0x00002fb0 [Thread-5] (most recent call first):
+=======
+Thread 0x000031c0 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x000031c4 [WindowsNotificationEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 2018 in _run_once
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 677 in run_forever
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\base_events.py", line 706 in run_until_complete
+  File "D:\a\yasb\yasb\src\core\widgets\services\notifications\windows_notification.py", line 84 in run
+
+Thread 0x000031bc [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x000031cc [Thread-4] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
@@ -2232,7 +3119,11 @@ Thread 0x00002fb0 [Thread-5] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00002584 [Thread-6] (most recent call first):
+=======
+Thread 0x000031c8 [Thread-5] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
   File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
@@ -2241,6 +3132,7 @@ Thread 0x00002584 [Thread-6] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00000dec [WindowsNotificationEventListener] (most recent call first):
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 778 in _poll
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\windows_events.py", line 446 in select
@@ -2258,35 +3150,58 @@ Thread 0x00000540 [SystemEventListener] (most recent call first):
   File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
 
 Thread 0x00004b80 [MemoryWorker] (most recent call first):
+=======
+Thread 0x00002db0 [MemoryWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\memory\memory_api.py", line 247 in run
 
+<<<<<<< HEAD
 Thread 0x00001fac [CpuWorker] (most recent call first):
+=======
+Thread 0x0000163c [CpuWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 373 in wait
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 670 in wait
   File "D:\a\yasb\yasb\src\core\widgets\services\cpu\cpu_api.py", line 343 in run
 
+<<<<<<< HEAD
 Thread 0x00004464 [_EventWorker] (most recent call first):
+=======
+Thread 0x00002e18 [_EventWorker] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
 
+<<<<<<< HEAD
 Thread 0x00003ef4 [LogPipeServer] (most recent call first):
+=======
+Thread 0x00002b08 [LogPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Thread 0x00004460 [CLIPipeServer] (most recent call first):
+=======
+Thread 0x000028c0 [CLIPipeServer] (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 291 in ConnectNamedPipe
   File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
   File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
 
+<<<<<<< HEAD
 Current thread 0x0000273c (most recent call first):
+=======
+Current thread 0x00002c38 (most recent call first):
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 337 in _update_window_title
   File "D:\a\yasb\yasb\src\core\widgets\yasb\active_window.py", line 237 in _on_focus_change_event
   File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
@@ -2295,6 +3210,7 @@ Current thread 0x0000273c (most recent call first):
   File "main.py", line 203 in <module>
   File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 43 in run
   File "src/freeze_core/initscripts/__startup__.py", line 147 in run
+<<<<<<< HEAD
 2026-09-11 16:53:54,041 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
 2026-09-11 16:53:54,052 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
 2026-09-11 16:53:54,056 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
@@ -2990,3 +3906,503 @@ could not find expected ':'
 2026-09-15 08:28:01,771 [INFO] [Dummy-11] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-4f477104-b09c-11f1-a642-a85e45552a3e
 2026-09-15 08:28:01,992 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49243
 2026-09-15 08:28:01,992 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+=======
+2026-09-13 23:29:03,635 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-13 23:29:03,829 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-13 23:29:03,955 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-13 23:29:03,980 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 18:45:10,784 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-14 18:45:10,785 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:45:10,791 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:45:12,670 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 18:45:13,379 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-14 18:45:13,379 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 18:45:13,380 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-09-14 18:45:13,381 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 18:45:13,381 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 18:45:13,386 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-5d7cb885-b029-11f1-b339-a8a15937b6a6
+2026-09-14 18:45:13,522 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 18:45:13,561 [INFO] [Dummy-7] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 18:45:13,789 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-14 18:45:18,845 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-5d7cb885-b029-11f1-b339-a8a15937b6a6
+2026-09-14 18:46:52,824 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.6
+2026-09-14 18:46:52,825 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:46:52,825 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:46:52,825 [ERROR] [MainThread] [root/main.py:77]: Another instance of the YASB is already running.
+2026-09-14 18:47:41,319 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-14 18:47:41,320 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-14 18:47:41,320 [INFO] [Dummy-7] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 18:47:41,321 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-09-14 18:47:41,758 [ERROR] [MainThread] [qasync._QEventLoop/__init__.py:770]: Exception in callback Task.task_wakeup()
+handle: <Handle Task.task_wakeup()>
+Traceback (most recent call last):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\events.py", line 94, in _run
+RuntimeError: loop <QIOCPEventLoop running=False closed=False debug=False> is not the running loop
+2026-09-14 18:47:41,760 [ERROR] [MainThread] [root/main.py:205]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 203, in <module>
+  File "main.py", line 100, in main
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 435, in run_until_complete
+RuntimeError: Event loop stopped before Future completed.
+2026-09-14 18:48:44,831 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 18:48:44,831 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:48:44,832 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:48:44,878 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 18:48:45,397 [DEBUG] [MainThread] [virtual_desktop/interfaces.py:863]: Virtual desktop tier 0 selected from build 19045
+2026-09-14 18:48:45,408 [INFO] [MainThread] [windows_desktop_service/com.py:130]: Virtual desktop COM ready (tier 0, build 19045)
+2026-09-14 18:48:45,413 [INFO] [MainThread] [windows_desktop_service/notification.py:163]: Registered for virtual desktop notifications (cookie=19)
+2026-09-14 18:48:45,516 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 18:48:45,516 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:48:45,516 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:48:45,517 [ERROR] [MainThread] [root/main.py:46]: Another instance of the YASB is already running.
+2026-09-14 18:48:45,538 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 18:48:45,539 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:48:45,547 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 18:48:45,549 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 18:48:45,612 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 18:48:45,660 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 18:48:45,662 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 7560)
+2026-09-14 18:48:45,718 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 18:48:45,718 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-14 18:48:45,718 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-14 18:48:45,719 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-14 18:48:45,719 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-14 18:48:46,073 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-14 18:48:46,073 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65588 device=\\.\DISPLAY2
+2026-09-14 18:48:46,074 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 18:48:46,087 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 18:48:46,118 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 18:48:46,122 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65588 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 18:48:46,159 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 18:48:46,189 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65588: DDC=True scheme=False
+2026-09-14 18:48:46,434 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 18:48:46,439 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 18:48:46,439 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 18:48:46,439 [DEBUG] [Dummy-9] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 18:48:46,439 [WARNING] [Dummy-9] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 18:48:46,441 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 18:48:46,441 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 18:48:46,472 [DEBUG] [Dummy-12] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 18:48:46,481 [INFO] [Dummy-12] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 18:48:46,481 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 18:48:46,579 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 131073: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 18:48:46,749 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49244
+2026-09-14 18:48:46,750 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+2026-09-14 18:49:39,881 [DEBUG] [Thread-10] [root/watcher.py:90]: Config file modified: c:\users\nep\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-14 18:49:39,909 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-14 18:49:40,017 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-14 18:49:40,018 [DEBUG] [MainThread] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-14 18:49:40,024 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-14 18:49:40,167 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-14 18:49:40,170 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-14 18:49:40,170 [INFO] [Dummy-12] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 18:49:40,170 [DEBUG] [Dummy-12] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-14 18:49:40,186 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-14 18:49:40,190 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:49:40,224 [INFO] [MainThread] [windows_desktop_service/notification.py:171]: Unregistered virtual desktop notifications (cookie=19)
+2026-09-14 18:49:40,652 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 18:49:40,653 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:49:40,653 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:49:40,712 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 18:49:40,877 [WARNING] [MainThread] [root/widget_builder.py:39]: No widget config could be found for widget 'komorebi_workspaces
+2026-09-14 18:49:40,952 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 18:49:40,955 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:49:40,956 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 18:49:40,958 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 18:49:41,027 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 18:49:41,052 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 18:49:41,081 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 7560)
+2026-09-14 18:49:41,264 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 18:49:41,295 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-14 18:49:41,295 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65588 device=\\.\DISPLAY2
+2026-09-14 18:49:41,295 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 18:49:41,308 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 18:49:41,317 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 18:49:41,321 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65588 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 18:49:41,388 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65588: DDC=True scheme=False
+2026-09-14 18:49:41,405 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 18:49:41,665 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 18:49:41,670 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 18:49:41,670 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 18:49:41,670 [ERROR] [MainThread] [root/widget_builder.py:100]: Failed to add undefined widget(s)  - The widget "komorebi_workspaces" is undefined.
+2026-09-14 18:49:41,671 [DEBUG] [Dummy-9] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 18:49:41,672 [WARNING] [Dummy-9] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 18:49:41,681 [DEBUG] [Dummy-10] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 18:49:41,682 [INFO] [Dummy-10] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 18:49:41,690 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 18:49:41,690 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 18:49:41,727 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-14 18:49:41,727 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-14 18:49:41,727 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 18:49:41,727 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-14 18:49:41,728 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-14 18:49:41,835 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 131073: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 18:49:41,989 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49244
+2026-09-14 18:49:41,989 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+2026-09-14 18:50:08,782 [DEBUG] [Thread-11] [root/watcher.py:90]: Config file modified: c:\users\nep\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-14 18:50:08,808 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-14 18:50:08,919 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-14 18:50:08,919 [DEBUG] [MainThread] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-14 18:50:08,925 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-14 18:50:09,025 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-14 18:50:09,029 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-14 18:50:09,029 [INFO] [Dummy-10] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 18:50:09,030 [DEBUG] [Dummy-10] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-14 18:50:09,055 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-14 18:50:09,060 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:50:09,446 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 18:50:09,446 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:50:09,447 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:50:09,506 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 18:50:09,729 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 18:50:09,729 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:50:09,730 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 18:50:09,731 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 18:50:09,793 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 18:50:09,822 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 18:50:09,849 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 7560)
+2026-09-14 18:50:10,017 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 18:50:10,058 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-14 18:50:10,058 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65588 device=\\.\DISPLAY2
+2026-09-14 18:50:10,058 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 18:50:10,079 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 18:50:10,083 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 18:50:10,087 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65588 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 18:50:10,158 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65588: DDC=True scheme=False
+2026-09-14 18:50:10,199 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 18:50:10,482 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 18:50:10,486 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 18:50:10,486 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 18:50:10,487 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-14 18:50:10,487 [DEBUG] [Dummy-9] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 18:50:10,487 [WARNING] [Dummy-9] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 18:50:10,487 [INFO] [Dummy-10] [root/event_listener.py:54]: Created named pipe yasb-0e93b8bc-b02a-11f1-95f6-a8a15937b6a6
+2026-09-14 18:50:10,488 [DEBUG] [Dummy-10] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-0e93b8bc-b02a-11f1-95f6-a8a15937b6a6
+2026-09-14 18:50:10,490 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 18:50:10,490 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 18:50:10,520 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-14 18:50:10,520 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-14 18:50:10,521 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-14 18:50:10,521 [DEBUG] [Dummy-12] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 18:50:10,528 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-14 18:50:10,528 [INFO] [Dummy-12] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 18:50:10,529 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 18:50:10,578 [INFO] [Dummy-10] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-0e93b8bc-b02a-11f1-95f6-a8a15937b6a6
+2026-09-14 18:50:10,622 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 131073: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 18:50:10,824 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49244
+2026-09-14 18:50:10,825 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+2026-09-14 18:50:46,195 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:50:55,848 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:51:01,621 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:51:06,446 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:53:34,153 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:53:39,346 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:53:50,601 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:53:53,714 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:53:57,899 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:54:10,410 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:54:10,459 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 18:55:14,353 [DEBUG] [Thread-11] [root/watcher.py:90]: Config file modified: c:\users\nep\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-14 18:55:14,379 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-14 18:55:14,490 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-14 18:55:14,490 [DEBUG] [MainThread] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-14 18:55:14,496 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-14 18:55:14,649 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-14 18:55:14,650 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-14 18:55:14,650 [INFO] [Dummy-12] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 18:55:14,650 [DEBUG] [Dummy-12] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-14 18:55:14,651 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-14 18:55:14,653 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-14 18:55:14,658 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:55:14,992 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 18:55:14,992 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:55:14,993 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:55:15,042 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 18:55:15,097 [WARNING] [MainThread] [root/bar_manager.py:151]: Screen '' from config not found among connected screens.
+2026-09-14 18:55:15,097 [WARNING] [MainThread] [root/bar_manager.py:172]: Screen '' from config not found among connected screens.
+2026-09-14 18:55:15,098 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 18:55:15,099 [DEBUG] [Dummy-4] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 18:55:15,099 [WARNING] [Dummy-4] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 18:55:15,099 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 18:55:15,099 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 18:55:15,126 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 18:55:16,355 [DEBUG] [Thread-3] [root/watcher.py:90]: Config file modified: c:\users\nep\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-14 18:55:16,383 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-14 18:55:16,496 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-14 18:55:16,496 [DEBUG] [MainThread] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-14 18:55:16,502 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-14 18:55:16,502 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-14 18:55:16,966 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 18:55:16,966 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:55:16,967 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:55:17,013 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 18:55:17,236 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 18:55:17,236 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:55:17,237 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 18:55:17,238 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 18:55:17,302 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 18:55:17,330 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 18:55:17,347 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 7560)
+2026-09-14 18:55:17,350 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 18:55:17,350 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-14 18:55:17,351 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-14 18:55:17,351 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-14 18:55:17,351 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-14 18:55:17,561 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-14 18:55:17,561 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65588 device=\\.\DISPLAY2
+2026-09-14 18:55:17,561 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 18:55:17,574 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 18:55:17,582 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 18:55:17,585 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65588 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 18:55:17,635 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 18:55:17,660 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65588: DDC=True scheme=False
+2026-09-14 18:55:17,875 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 18:55:17,886 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:55:18,064 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 131073: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 18:55:18,151 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MH-246 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 18:55:18,317 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 18:55:18,317 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 18:55:18,317 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-14 18:55:18,319 [INFO] [Dummy-10] [root/event_listener.py:54]: Created named pipe yasb-c60ee42e-b02a-11f1-9574-a8a15937b6a6
+2026-09-14 18:55:18,319 [DEBUG] [Dummy-10] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-c60ee42e-b02a-11f1-9574-a8a15937b6a6
+2026-09-14 18:55:18,319 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 18:55:18,320 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 18:55:18,319 [DEBUG] [Dummy-11] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 18:55:18,320 [WARNING] [Dummy-11] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 18:55:18,432 [DEBUG] [Dummy-13] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 18:55:18,438 [INFO] [Dummy-13] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 18:55:18,439 [INFO] [Dummy-10] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c60ee42e-b02a-11f1-9574-a8a15937b6a6
+2026-09-14 18:55:18,439 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 18:55:18,764 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49244
+2026-09-14 18:55:18,764 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+2026-09-14 18:56:05,067 [INFO] [CLIPipeServer] [cli_server/cli_server.py:257]: CLI server received command: stop
+2026-09-14 18:56:05,067 [INFO] [CLIPipeServer] [root/controller.py:43]: Exiting Application from CLI...
+2026-09-14 18:56:05,182 [INFO] [CLIPipeServer] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-14 18:56:05,183 [DEBUG] [CLIPipeServer] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-14 18:56:05,558 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-14 18:56:05,559 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-14 18:56:05,559 [INFO] [Dummy-13] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 18:56:05,559 [DEBUG] [Dummy-13] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-14 18:56:05,560 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-14 18:56:05,562 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-14 18:56:05,563 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:56:05,566 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HGCMH2461.json
+2026-09-14 18:56:07,474 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 18:56:07,475 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 18:56:07,475 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 18:56:07,520 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 18:56:07,746 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 18:56:07,746 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:56:07,747 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 18:56:07,748 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 18:56:07,809 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 18:56:07,837 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 18:56:07,854 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 7560)
+2026-09-14 18:56:07,857 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 18:56:08,051 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-14 18:56:08,051 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65588 device=\\.\DISPLAY2
+2026-09-14 18:56:08,051 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 18:56:08,064 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 18:56:08,071 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 18:56:08,075 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65588 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 18:56:08,129 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 18:56:08,140 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65588: DDC=True scheme=False
+2026-09-14 18:56:08,366 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 18:56:08,376 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 18:56:08,507 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 131073: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 18:56:08,648 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MH-246 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 18:56:08,818 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 18:56:08,818 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 18:56:08,819 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-14 18:56:08,819 [DEBUG] [Dummy-9] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 18:56:08,820 [WARNING] [Dummy-9] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 18:56:08,821 [INFO] [Dummy-11] [root/event_listener.py:54]: Created named pipe yasb-e428da53-b02a-11f1-86d3-a8a15937b6a6
+2026-09-14 18:56:08,821 [DEBUG] [Dummy-11] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-e428da53-b02a-11f1-86d3-a8a15937b6a6
+2026-09-14 18:56:08,821 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 18:56:08,822 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 18:56:08,926 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 18:56:08,926 [DEBUG] [Dummy-13] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 18:56:08,927 [INFO] [Dummy-13] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 18:56:08,926 [INFO] [Dummy-11] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-e428da53-b02a-11f1-86d3-a8a15937b6a6
+2026-09-14 19:01:18,592 [WARNING] [Dummy-11] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-09-14 19:01:18,592 [INFO] [Dummy-11] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-09-14 19:01:21,600 [INFO] [Dummy-11] [root/event_listener.py:54]: Created named pipe yasb-e428da53-b02a-11f1-86d3-a8a15937b6a6
+2026-09-14 19:01:21,600 [DEBUG] [Dummy-11] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-e428da53-b02a-11f1-86d3-a8a15937b6a6
+2026-09-14 19:01:21,656 [WARNING] [Dummy-11] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-14 19:01:26,712 [INFO] [Dummy-11] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-e428da53-b02a-11f1-86d3-a8a15937b6a6
+2026-09-14 19:05:29,809 [INFO] [CLIPipeServer] [cli_server/cli_server.py:257]: CLI server received command: stop
+2026-09-14 19:05:29,809 [INFO] [CLIPipeServer] [root/controller.py:43]: Exiting Application from CLI...
+2026-09-14 19:05:29,915 [INFO] [CLIPipeServer] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-14 19:05:29,916 [DEBUG] [CLIPipeServer] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-14 19:05:30,325 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-14 19:05:30,328 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-14 19:05:30,328 [INFO] [Dummy-13] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 19:05:30,328 [DEBUG] [Dummy-13] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-14 19:05:30,329 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-14 19:05:30,331 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-14 19:05:30,332 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 19:05:30,334 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HGCMH2461.json
+2026-09-14 19:05:32,059 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 19:05:32,059 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 19:05:32,060 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 19:05:32,107 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 19:05:32,349 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 19:05:32,349 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 19:05:32,358 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 19:05:32,358 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 19:05:32,418 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 19:05:32,447 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 19:05:32,642 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 7560)
+2026-09-14 19:05:32,657 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 19:05:32,689 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-14 19:05:32,689 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65588 device=\\.\DISPLAY2
+2026-09-14 19:05:32,689 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 19:05:32,702 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 19:05:32,711 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 19:05:32,715 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65588 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 19:05:32,778 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 19:05:32,785 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65588: DDC=True scheme=False
+2026-09-14 19:05:33,044 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 19:05:33,057 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 19:05:33,162 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 131073: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 19:05:33,304 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MH-246 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 19:05:33,523 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 19:05:33,523 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-14 19:05:33,523 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 19:05:33,523 [DEBUG] [Dummy-9] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 19:05:33,524 [WARNING] [Dummy-9] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 19:05:33,524 [INFO] [Dummy-10] [root/event_listener.py:54]: Created named pipe yasb-34bfe31f-b02c-11f1-a996-a8a15937b6a6
+2026-09-14 19:05:33,524 [DEBUG] [Dummy-10] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-34bfe31f-b02c-11f1-a996-a8a15937b6a6
+2026-09-14 19:05:33,526 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 19:05:33,526 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 19:05:33,590 [DEBUG] [Dummy-13] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 19:05:33,590 [INFO] [Dummy-13] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 19:05:33,591 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 19:05:33,600 [INFO] [Dummy-10] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-34bfe31f-b02c-11f1-a996-a8a15937b6a6
+2026-09-14 21:28:10,312 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 21:28:10,314 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 21:28:10,315 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 21:28:10,459 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 21:28:11,638 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 21:28:11,645 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 21:28:11,646 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 21:28:11,692 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 5724)
+2026-09-14 21:28:11,782 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 21:28:11,806 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 21:28:11,819 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-14 21:28:11,848 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-14 21:28:11,848 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-14 21:28:11,848 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-14 21:28:11,877 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 21:28:11,941 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 21:28:13,477 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65539 device=\\.\DISPLAY1
+2026-09-14 21:28:13,477 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65537 device=\\.\DISPLAY2
+2026-09-14 21:28:13,477 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 21:28:13,501 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 21:28:13,528 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65539 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 21:28:13,532 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65537 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 21:28:13,608 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65537: DDC=True scheme=False
+2026-09-14 21:28:13,628 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 21:28:14,000 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 21:28:14,010 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 21:28:14,116 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 65539: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 21:28:14,145 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MH-246 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 21:28:14,277 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 21:28:14,278 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 21:28:14,278 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-14 21:28:14,280 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 21:28:14,280 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 21:28:14,280 [DEBUG] [Dummy-11] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 21:28:14,280 [WARNING] [Dummy-11] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 21:28:14,281 [INFO] [Dummy-12] [root/event_listener.py:54]: Created named pipe yasb-235b69a4-b040-11f1-8145-a8a15937b6a6
+2026-09-14 21:28:14,281 [DEBUG] [Dummy-12] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-235b69a4-b040-11f1-8145-a8a15937b6a6
+2026-09-14 21:28:14,378 [DEBUG] [Dummy-13] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 21:28:14,379 [INFO] [Dummy-13] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 21:28:14,386 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 21:28:14,412 [WARNING] [Dummy-12] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-09-14 21:28:14,713 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49282
+2026-09-14 21:28:14,713 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+2026-09-14 21:28:16,448 [DEBUG] [yasb-audio-visualizer] [root/loopback.py:662]: Audio visualizer: loopback stream invalidated ((-2004287484, None, (None, None, None, 0, None))), reopening
+2026-09-14 21:28:16,454 [DEBUG] [Dummy-16] [root/loopback.py:290]: Audio visualizer: default device changed flow=0 role=0 device={0.0.0.00000000}.{b497a070-4190-46ba-b289-9cbfbc2420ed}
+2026-09-14 21:28:16,454 [DEBUG] [Dummy-17] [root/loopback.py:290]: Audio visualizer: default device changed flow=0 role=1 device={0.0.0.00000000}.{b497a070-4190-46ba-b289-9cbfbc2420ed}
+2026-09-14 21:28:16,959 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 21:28:18,736 [DEBUG] [yasb-audio-visualizer] [root/loopback.py:662]: Audio visualizer: loopback stream invalidated ((-2004287484, None, (None, None, None, 0, None))), reopening
+2026-09-14 21:28:18,742 [DEBUG] [Dummy-19] [root/loopback.py:290]: Audio visualizer: default device changed flow=0 role=0 device={0.0.0.00000000}.{b497a070-4190-46ba-b289-9cbfbc2420ed}
+2026-09-14 21:28:18,742 [DEBUG] [Dummy-20] [root/loopback.py:290]: Audio visualizer: default device changed flow=0 role=1 device={0.0.0.00000000}.{b497a070-4190-46ba-b289-9cbfbc2420ed}
+2026-09-14 21:28:19,247 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 21:28:19,463 [INFO] [Dummy-12] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-235b69a4-b040-11f1-8145-a8a15937b6a6
+2026-09-14 21:28:38,525 [WARNING] [UpdateChecker] [root/update_service.py:300]: Network error checking for updates: [Errno 11001] getaddrinfo failed
+2026-09-14 21:28:38,525 [WARNING] [UpdateChecker] [root/update_service.py:430]: Background update check failed: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-09-14 21:29:39,270 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 65798579
+2026-09-14 21:29:39,273 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 1574767
+2026-09-14 21:29:39,273 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 2754419
+2026-09-14 21:29:39,274 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 1640303
+2026-09-14 21:38:06,703 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 5703371
+2026-09-14 21:38:06,705 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 131957
+2026-09-14 21:38:06,705 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 56952435
+2026-09-14 21:38:06,706 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 197493
+2026-09-14 21:38:06,707 [ERROR] [SystrayHook] [root/app_icons.py:284]: GetIconInfo failed: 57083507
+2026-09-14 21:38:19,852 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
+2026-09-14 22:21:17,184 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
+2026-09-14 22:32:15,774 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
+2026-09-14 22:33:59,145 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
+2026-09-14 22:34:10,381 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
+2026-09-14 22:34:53,043 [DEBUG] [Thread-9] [root/watcher.py:84]: Stylesheet modified: c:\users\nep\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-14 22:35:04,488 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
+2026-09-14 22:35:15,683 [DEBUG] [Thread-9] [root/watcher.py:90]: Config file modified: c:\users\nep\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-14 22:35:15,723 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-14 22:35:15,844 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-14 22:35:15,846 [DEBUG] [MainThread] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-14 22:35:15,860 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-14 22:35:16,471 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-14 22:35:16,484 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-14 22:35:16,489 [INFO] [Dummy-13] [root/windows_notification.py:97]: Notification service stopped
+2026-09-14 22:35:16,490 [DEBUG] [Dummy-13] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-14 22:35:16,493 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-14 22:35:16,514 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-14 22:35:16,522 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 22:35:16,526 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\Nep\AppData\Local\YASB\systray_state_HGCMH2461.json
+2026-09-14 22:35:16,873 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-14 22:35:16,874 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-14 22:35:16,874 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-14 22:35:16,956 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-14 22:35:17,325 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 22:35:17,326 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-14 22:35:17,335 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-14 22:35:17,336 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-14 22:35:17,417 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-14 22:35:17,452 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-14 22:35:17,474 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 5724)
+2026-09-14 22:35:17,480 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-14 22:35:17,869 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-14 22:35:17,869 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-14 22:35:17,869 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-14 22:35:17,870 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-14 22:35:17,911 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65539 device=\\.\DISPLAY1
+2026-09-14 22:35:17,911 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65537 device=\\.\DISPLAY2
+2026-09-14 22:35:17,912 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-14 22:35:17,930 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-14 22:35:17,936 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65539 metadata: MH-246 internal=False conn=Hdmi
+2026-09-14 22:35:17,943 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65537 metadata: N2455 Pro internal=False conn=Hdmi
+2026-09-14 22:35:18,006 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65537: DDC=True scheme=False
+2026-09-14 22:35:18,016 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: N2455 Pro [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 22:35:18,395 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-14 22:35:18,413 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\Nep\AppData\Local\YASB\systray_state_HCSN2455PRO.json
+2026-09-14 22:35:18,499 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MH-246 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-14 22:35:18,506 [DEBUG] [BrightnessDetect] [root/service.py:417]: Monitor 65539: DDC=False scheme=False internal=False name=MH-246
+2026-09-14 22:35:18,780 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-14 22:35:18,781 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-14 22:35:18,781 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-14 22:35:18,783 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\nep\neps-windows-usability-config\.config\yasb
+2026-09-14 22:35:18,783 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-14 22:35:18,783 [INFO] [Dummy-12] [root/event_listener.py:54]: Created named pipe yasb-8225cb1b-b049-11f1-ae94-a8a15937b6a6
+2026-09-14 22:35:18,783 [DEBUG] [Dummy-12] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-8225cb1b-b049-11f1-ae94-a8a15937b6a6
+2026-09-14 22:35:18,783 [DEBUG] [Dummy-11] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-14 22:35:18,783 [WARNING] [Dummy-11] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-14 22:35:18,876 [DEBUG] [Dummy-13] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-14 22:35:18,877 [INFO] [Dummy-13] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-14 22:35:18,878 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-14 22:35:18,955 [INFO] [Dummy-12] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-8225cb1b-b049-11f1-ae94-a8a15937b6a6
+2026-09-14 22:35:19,258 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49282
+2026-09-14 22:35:19,259 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+>>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
