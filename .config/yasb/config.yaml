@@ -211,8 +211,8 @@ widgets:
       label_workspace_populated_btn: "\udb81\udc3e"
       label_default_name: ""
       label_zero_index: false
-      hide_empty_workspaces: false
-      hide_if_offline: false
+      hide_empty_workspaces: true
+      hide_if_offline: true
       toggle_workspace_layer:
         enabled: false
         tiling_label: "Tiling"
