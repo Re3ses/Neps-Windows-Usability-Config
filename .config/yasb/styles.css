@@ -62,6 +62,13 @@
     margin-top: 4px;
     border: 1px solid var(--yasb-tooltip-border);
 }
+
+/* Komorebi */
+.ws-btn  {
+    background-color: rgba(0, 0,0,0 );
+    width: auto;
+}
+
 /* Context Menu */
 .context-menu,
 .context-menu .menu-checkbox {
