@@ -42,8 +42,6 @@
 /* Bar */
 .yasb-bar {
     background-color: var(--yasb-bar-bg);
-<<<<<<< HEAD
-=======
 }
 .yasb-bar.adaptive {
     -qproperty-railheight: 4;
@@ -61,8 +59,8 @@
 
 .ws-btn:hover {
     background-color: rgba(255, 255, 255, 40);
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
 }
+
 .yasb-bar.adaptive {
     -qproperty-railheight: 4;
     -qproperty-islandradius: 16;
@@ -82,16 +80,12 @@
     margin-top: 4px;
     border: 1px solid var(--yasb-tooltip-border);
 }
-<<<<<<< HEAD
-
 /* Komorebi */
-.ws-btn  {
-    background-color: rgba(0, 0,0,0 );
+.ws-btn {
+    background-color: rgba(0, 0, 0, 0);
     width: auto;
 }
 
-=======
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
 /* Context Menu */
 .context-menu,
 .context-menu .menu-checkbox {
@@ -122,7 +116,7 @@
 .context-menu::item:selected,
 .context-menu .menu-checkbox:hover {
     background-color: var(--yasb-white-alpha-10);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .context-menu::separator {
     height: 1px;
@@ -250,7 +244,7 @@
 .clock-popup.timer .clock-popup-footer,
 .clock-popup.alarm .clock-popup-footer {
     padding: 16px;
-    background-color: var(--yasb-dialog-surface)
+    background-color: var(--yasb-dialog-surface);
 }
 .clock-popup .clock-label-timer {
     font-size: 13px;
@@ -291,7 +285,7 @@
 }
 .clock-popup .button.save:hover,
 .clock-popup .button.start:hover {
-    background-color: var(--yasb-accent-hover)
+    background-color: var(--yasb-accent-hover);
 }
 .clock-popup .button.is-alarm-enabled {
     background-color: var(--yasb-accent);
@@ -669,11 +663,7 @@
     background-color: var(--yasb-white-alpha-20);
 }
 .open-meteo-widget .icon {
-<<<<<<< HEAD
-    color: #F6E3B4;
-=======
     color: #f6e3b4;
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
 }
 .open-meteo-card {
     background-color: var(--yasb-popup-bg);
@@ -972,13 +962,9 @@
     outline: none;
     border-radius: 6px;
     margin: 0 3px;
-<<<<<<< HEAD
-    transition: width 0.3s, background-color 0.3s;
-=======
     transition:
         width 0.3s,
         background-color 0.3s;
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
 }
 .windows-desktops .ws-btn.active {
     width: 32px;
@@ -1028,13 +1014,9 @@
 .control-center-menu .section.power .plan-name,
 .control-center-menu .section.power .mode-name,
 .control-center-menu .section.media .button {
-<<<<<<< HEAD
-    transition: background-color 0.08s, opacity 0.08s;
-=======
     transition:
         background-color 0.08s,
         opacity 0.08s;
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
     opacity: 1;
 }
 /* --- SHARED CLICKED / PRESSED STATES (Opacity 0.5) --- */
@@ -1070,13 +1052,9 @@
     max-width: 32px;
     font-size: 14px;
     color: rgb(255, 255, 255);
-<<<<<<< HEAD
-    transition: background-color 0.08s, opacity 0.08s;
-=======
     transition:
         background-color 0.08s,
         opacity 0.08s;
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
 }
 .control-center-menu .section.system-controls .button:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -1099,13 +1077,8 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .control-center-menu .section.quick-actions .button.active .icon {
-<<<<<<< HEAD
-    background-color: #47AFF5;
-    border: 1px solid #47AFF5;
-=======
     background-color: #47aff5;
     border: 1px solid #47aff5;
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
     color: #000;
 }
 .control-center-menu .section.quick-actions .button.active .icon:hover {
@@ -1237,11 +1210,7 @@
 .context-menu::indicator:checked {
     width: 4px;
     height: 12px;
-<<<<<<< HEAD
-    background-color: #47AFF5;
-=======
     background-color: #47aff5;
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
     border-radius: 2px;
     margin-left: 8px;
 }
@@ -1252,13 +1221,9 @@
     padding: 0 8px;
     border: 1px solid transparent;
     background-color: transparent;
-<<<<<<< HEAD
-    transition: padding 0.3s, background-color 0.3s
-=======
     transition:
         padding 0.3s,
         background-color 0.3s;
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
 }
 .taskbar-widget .app-container.foreground {
     background-color: rgba(255, 255, 255, 0.15);
@@ -1322,11 +1287,7 @@
 }
 /* Audio visualizer widget */
 .audio-visualizer-widget .audio-visualizer-canvas {
-<<<<<<< HEAD
-    -qproperty-fillbrush: linear-gradient(to top, #8A9AFF, #8A8AFF, #C38AFF);
-=======
     -qproperty-fillbrush: linear-gradient(to top, #8a9aff, #8a8aff, #c38aff);
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
 }
 /* Wallpapers widget */
 .wallpapers-widget:hover {

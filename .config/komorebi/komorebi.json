@@ -18,7 +18,9 @@
   },
   "display_index_preferences": {
     "0": "HCS0238-5&2524e507&0&UID264",
-    "1": "HGC2380-5&2524e507&0&UID268"
+    "1": "HGC2380-5&2524e507&0&UID268",
+    "2": "MSI4BA9-4&3623efdd&0&UID206371",
+    "3": "ACI23C4-4&3623efdd&0&UID214571"
   },
   "monitors": [
     {
@@ -42,6 +44,22 @@
             "row_ratios": [0.4]
           },
            "layout_flip": "Vertical"
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "Codespace",
+          "layout": "BSP"
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "Grid",
+          "layout": "Grid"
         }
       ]
     }

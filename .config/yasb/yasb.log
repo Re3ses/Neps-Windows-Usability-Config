@@ -4406,3 +4406,108 @@ RuntimeError: Event loop stopped before Future completed.
 2026-09-14 22:35:19,258 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49282
 2026-09-14 22:35:19,259 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
 >>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
+2026-09-15 08:50:46,592 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-15 08:50:46,592 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-15 08:50:46,593 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-15 08:50:46,632 [ERROR] [MainThread] [root/main.py:180]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 178, in <module>
+  File "main.py", line 75, in main
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 109, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 144, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 82, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\MIS\Neps-Windows-Usability-Config\.config\yasb\config.yaml", line 11, column 1
+could not find expected ':'
+  in "C:\Users\MIS\Neps-Windows-Usability-Config\.config\yasb\config.yaml", line 12, column 12
+2026-09-15 08:51:13,492 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-15 08:51:13,492 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-15 08:51:13,493 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-15 08:51:13,531 [ERROR] [MainThread] [root/main.py:180]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 178, in <module>
+  File "main.py", line 75, in main
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 109, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 144, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 82, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\MIS\Neps-Windows-Usability-Config\.config\yasb\config.yaml", line 11, column 1
+could not find expected ':'
+  in "C:\Users\MIS\Neps-Windows-Usability-Config\.config\yasb\config.yaml", line 12, column 12
+2026-09-15 08:53:36,482 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-15 08:53:36,482 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-15 08:53:36,482 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-15 08:53:36,525 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-15 08:53:36,748 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\MIS\AppData\Local\YASB\systray_state_OSOFTMSIMP2412BA9H423814462.json
+2026-09-15 08:53:36,749 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-15 08:53:36,758 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-15 08:53:36,784 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-15 08:53:36,814 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-15 08:53:36,852 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-15 08:53:36,857 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 10500)
+2026-09-15 08:53:36,859 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-15 08:53:36,860 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-15 08:53:36,860 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-15 08:53:36,860 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-15 08:53:36,860 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-15 08:53:37,163 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-15 08:53:37,163 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65602 device=\\.\DISPLAY2
+2026-09-15 08:53:37,163 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-15 08:53:37,177 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-15 08:53:37,181 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: ASUS VC239 internal=False conn=Hdmi
+2026-09-15 08:53:37,184 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65602 metadata: MSI MP2412 internal=False conn=Hdmi
+2026-09-15 08:53:37,220 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MSI MP2412 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-15 08:53:37,263 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 131073: DDC=True scheme=False
+2026-09-15 08:53:37,640 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65602: DDC=True scheme=False
+2026-09-15 08:53:37,732 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-15 08:53:37,741 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\MIS\AppData\Local\YASB\systray_state_OSOFTMSIMP2412BA9H423814462.json
+2026-09-15 08:53:37,811 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: ASUS VC239 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-15 08:53:37,984 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-15 08:53:37,984 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-15 08:53:37,984 [DEBUG] [Dummy-10] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-15 08:53:37,984 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-15 08:53:37,984 [WARNING] [Dummy-10] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-15 08:53:37,985 [INFO] [Dummy-11] [root/event_listener.py:54]: Created named pipe yasb-e2fefd77-b09f-11f1-bf0e-a85e45552a3e
+2026-09-15 08:53:37,985 [DEBUG] [Dummy-11] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-e2fefd77-b09f-11f1-bf0e-a85e45552a3e
+2026-09-15 08:53:37,986 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-15 08:53:37,986 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-15 08:53:38,021 [DEBUG] [Dummy-14] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-15 08:53:38,021 [INFO] [Dummy-14] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-15 08:53:38,021 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-15 08:53:38,063 [INFO] [Dummy-11] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-e2fefd77-b09f-11f1-bf0e-a85e45552a3e
+2026-09-15 08:53:38,324 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49243
+2026-09-15 08:53:38,324 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed

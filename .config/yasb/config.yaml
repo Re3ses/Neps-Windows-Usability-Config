@@ -8,11 +8,7 @@ update_check: true
 bars:
   primary-bar:
     enabled: true
-<<<<<<< HEAD
-    screens: ["primary"]
-=======
     screens: ["*"]
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
     class_name: yasb-bar
     style: "adaptive"
     alignment:
@@ -221,18 +217,10 @@ widgets:
         enabled: false
         tiling_label: "Tiling"
         floating_label: "Floating"
-<<<<<<< HEAD
-
-      app_icons:
-        enabled_populated: false
-        enabled_active: false
-        size: 2
-=======
       app_icons:
         enabled_populated: false
         enabled_active: false
         size: 12
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
         max_icons: 0
         hide_label: false
         hide_duplicates: false
@@ -240,11 +228,7 @@ widgets:
   clock:
     type: yasb.clock.ClockWidget
     options:
-<<<<<<< HEAD
-      label: "{%I:%M}"
-=======
       label: "{%I:%M}<span>{alarm}</span>"
->>>>>>> 3f5f6746a49f6a003b62c763cb1e45307b16050a
       label_alt: "{%a, %d %b %H:%M}"
       timezones: []
       calendar:
