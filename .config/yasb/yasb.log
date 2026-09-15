@@ -2871,3 +2871,122 @@ Current thread 0x0000273c (most recent call first):
 2026-09-15 08:24:15,314 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
 2026-09-15 08:24:22,812 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
 2026-09-15 08:24:30,095 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
+2026-09-15 08:26:08,896 [DEBUG] [Thread-12] [root/watcher.py:90]: Config file modified: c:\users\mis\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-15 08:26:08,898 [ERROR] [MainThread] [root/bar_manager.py:80]: Error loading config: while scanning a simple key
+  in "C:\Users\MIS\Neps-Windows-Usability-Config\.config\yasb\config.yaml", line 11, column 1
+could not find expected ':'
+  in "C:\Users\MIS\Neps-Windows-Usability-Config\.config\yasb\config.yaml", line 12, column 12
+2026-09-15 08:26:08,905 [DEBUG] [Thread-12] [root/watcher.py:84]: Stylesheet modified: c:\users\mis\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-15 08:26:27,892 [DEBUG] [Thread-12] [root/watcher.py:90]: Config file modified: c:\users\mis\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-15 08:26:27,916 [DEBUG] [Thread-12] [root/watcher.py:84]: Stylesheet modified: c:\users\mis\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-15 08:27:12,898 [DEBUG] [Thread-12] [root/watcher.py:90]: Config file modified: c:\users\mis\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-15 08:27:12,924 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-15 08:27:13,039 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-15 08:27:13,039 [DEBUG] [MainThread] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-15 08:27:13,043 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-15 08:27:13,117 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-15 08:27:13,119 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-15 08:27:13,120 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-15 08:27:13,121 [INFO] [Dummy-14] [root/windows_notification.py:97]: Notification service stopped
+2026-09-15 08:27:13,121 [DEBUG] [Dummy-14] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-15 08:27:13,123 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-15 08:27:13,125 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\MIS\AppData\Local\YASB\systray_state_OSOFTMSIMP2412BA9H423814462.json
+2026-09-15 08:27:14,212 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-15 08:27:14,213 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-15 08:27:14,213 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-15 08:27:14,253 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-15 08:27:14,754 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\MIS\AppData\Local\YASB\systray_state_OSOFTMSIMP2412BA9H423814462.json
+2026-09-15 08:27:14,754 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-15 08:27:14,755 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-15 08:27:14,781 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-15 08:27:14,788 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 10500)
+2026-09-15 08:27:14,850 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-15 08:27:14,851 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-15 08:27:14,851 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-15 08:27:14,851 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-15 08:27:14,851 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-15 08:27:14,855 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-15 08:27:14,907 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-15 08:27:15,358 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-15 08:27:15,358 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65602 device=\\.\DISPLAY2
+2026-09-15 08:27:15,358 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-15 08:27:15,369 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-15 08:27:15,394 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: ASUS VC239 internal=False conn=Hdmi
+2026-09-15 08:27:15,404 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65602 metadata: MSI MP2412 internal=False conn=Hdmi
+2026-09-15 08:27:15,424 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MSI MP2412 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-15 08:27:15,485 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 131073: DDC=True scheme=False
+2026-09-15 08:27:15,723 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-15 08:27:15,731 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\MIS\AppData\Local\YASB\systray_state_OSOFTMSIMP2412BA9H423814462.json
+2026-09-15 08:27:15,768 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65602: DDC=True scheme=False
+2026-09-15 08:27:15,796 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: ASUS VC239 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-15 08:27:15,924 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-15 08:27:15,924 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-15 08:27:15,925 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-15 08:27:15,925 [DEBUG] [Dummy-10] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-15 08:27:15,925 [WARNING] [Dummy-10] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-15 08:27:15,925 [INFO] [Dummy-11] [root/event_listener.py:54]: Created named pipe yasb-3403ddf9-b09c-11f1-8ab0-a85e45552a3e
+2026-09-15 08:27:15,925 [DEBUG] [Dummy-11] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-3403ddf9-b09c-11f1-8ab0-a85e45552a3e
+2026-09-15 08:27:15,927 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-15 08:27:15,927 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-15 08:27:15,954 [DEBUG] [Dummy-14] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-15 08:27:15,954 [INFO] [Dummy-14] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-15 08:27:15,954 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-15 08:27:16,006 [INFO] [Dummy-11] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-3403ddf9-b09c-11f1-8ab0-a85e45552a3e
+2026-09-15 08:27:16,238 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49243
+2026-09-15 08:27:16,238 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+2026-09-15 08:27:59,636 [DEBUG] [Thread-12] [root/watcher.py:90]: Config file modified: c:\users\mis\neps-windows-usability-config\.config\yasb\config.yaml
+2026-09-15 08:27:59,661 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-09-15 08:27:59,662 [DEBUG] [Thread-12] [root/watcher.py:84]: Stylesheet modified: c:\users\mis\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-15 08:27:59,772 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-09-15 08:27:59,773 [DEBUG] [MainThread] [cli_server/cli_server.py:210]: CLI server stopped
+2026-09-15 08:27:59,777 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-09-15 08:28:00,140 [INFO] [MainThread] [root/bar_manager.py:111]: Stopping HotkeyListener...
+2026-09-15 08:28:00,141 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping WindowsNotificationEventListener...
+2026-09-15 08:28:00,141 [INFO] [Dummy-14] [root/windows_notification.py:97]: Notification service stopped
+2026-09-15 08:28:00,141 [DEBUG] [Dummy-14] [root/windows_notification.py:178]: Unsubscribed from WNF notifications
+2026-09-15 08:28:00,142 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-09-15 08:28:00,146 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:208]: TaskbarWindowManager stopped
+2026-09-15 08:28:00,150 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\MIS\AppData\Local\YASB\systray_state_OSOFTMSIMP2412BA9H423814462.json
+2026-09-15 08:28:00,152 [DEBUG] [MainThread] [systray_widget/systray.py:594]: Saving state to C:\Users\MIS\AppData\Local\YASB\systray_state_ANCORCOMMUNICATIONSINCASUSVC239G5LMTJ009294.json
+2026-09-15 08:28:00,152 [DEBUG] [MainThread] [systray_widget/systray.py:602]: State file not found.
+2026-09-15 08:28:00,402 [INFO] [MainThread] [root/log.py:103]: YASB v2.0.7
+2026-09-15 08:28:00,402 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-09-15 08:28:00,403 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-09-15 08:28:00,445 [INFO] [MainThread] [root/main.py:113]: Debug mode enabled.
+2026-09-15 08:28:00,706 [DEBUG] [MainThread] [systray_widget/systray.py:612]: Loading state from C:\Users\MIS\AppData\Local\YASB\systray_state_OSOFTMSIMP2412BA9H423814462.json
+2026-09-15 08:28:00,707 [DEBUG] [MainThread] [systray_hook/systray_hook.py:137]: Creating pipe \\.\pipe\yasb_systray_monitor...
+2026-09-15 08:28:00,708 [DEBUG] [SystrayHook] [systray_widget/systray.py:78]: Systray hook thread is starting...
+2026-09-15 08:28:00,720 [INFO] [yasb-audio-visualizer] [root/loopback.py:728]: Audio visualizer: loopback capture open (48000 Hz, 2 ch, 32-bit float)
+2026-09-15 08:28:00,782 [INFO] [MainThread] [root/api.py:65]: GitHubDataManager started...
+2026-09-15 08:28:00,825 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-09-15 08:28:00,829 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 10500)
+2026-09-15 08:28:00,831 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:200]: Waiting for DLL to connect
+2026-09-15 08:28:00,832 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:219]: DLL Connected
+2026-09-15 08:28:00,832 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Pipeline connected.
+2026-09-15 08:28:00,832 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Successfully subclassed Shell_TrayWnd
+2026-09-15 08:28:00,833 [DEBUG] [SystrayHook] [systray_hook/systray_hook.py:293]: [DLL] Watchdog active. Sleeping until host drops.
+2026-09-15 08:28:01,278 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 131073 device=\\.\DISPLAY1
+2026-09-15 08:28:01,278 [DEBUG] [MainThread] [root/service.py:521]: BrightnessService found monitor: 65602 device=\\.\DISPLAY2
+2026-09-15 08:28:01,278 [INFO] [MainThread] [root/service.py:225]: BrightnessService started with 2 monitors
+2026-09-15 08:28:01,290 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-09-15 08:28:01,297 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 131073 metadata: ASUS VC239 internal=False conn=Hdmi
+2026-09-15 08:28:01,301 [DEBUG] [BrightnessDetect] [root/service.py:454]: Monitor 65602 metadata: MSI MP2412 internal=False conn=Hdmi
+2026-09-15 08:28:01,340 [DEBUG] [MainThread] [root/app_bar.py:137]: Bar primary-bar Created on Screen: MSI MP2412 [Bar Height: 36px, DPI Scale: 1.0]
+2026-09-15 08:28:01,390 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 131073: DDC=True scheme=False
+2026-09-15 08:28:01,663 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:181]: TaskbarWindowManager is starting...
+2026-09-15 08:28:01,666 [INFO] [MainThread] [root/bar_manager.py:242]: Starting HotkeyListener...
+2026-09-15 08:28:01,666 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-09-15 08:28:01,666 [INFO] [MainThread] [root/bar_manager.py:103]: Starting WindowsNotificationEventListener...
+2026-09-15 08:28:01,666 [DEBUG] [Dummy-10] [root/hotkeys.py:199]: Registered hotkey alt+e
+2026-09-15 08:28:01,667 [WARNING] [Dummy-10] [root/hotkeys.py:201]: Failed to register hotkey alt+space - it may be in use by another application.
+2026-09-15 08:28:01,667 [INFO] [Dummy-11] [root/event_listener.py:54]: Created named pipe yasb-4f477104-b09c-11f1-a642-a85e45552a3e
+2026-09-15 08:28:01,667 [DEBUG] [Dummy-11] [root/event_listener.py:126]: Waiting for Komorebi to subscribe to named pipe yasb-4f477104-b09c-11f1-a642-a85e45552a3e
+2026-09-15 08:28:01,669 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\mis\neps-windows-usability-config\.config\yasb
+2026-09-15 08:28:01,669 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-09-15 08:28:01,713 [DEBUG] [BrightnessDetect] [root/service.py:387]: Monitor 65602: DDC=True scheme=False
+2026-09-15 08:28:01,720 [DEBUG] [Dummy-14] [root/windows_notification.py:151]: WNF_SHEL_NOTIFICATION_TOTAL unavailable (0xC0000034)
+2026-09-15 08:28:01,730 [INFO] [Dummy-14] [root/windows_notification.py:164]: Notification service started (WNF_SHEL_NOTIFICATIONS)
+2026-09-15 08:28:01,731 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-09-15 08:28:01,771 [INFO] [Dummy-11] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-4f477104-b09c-11f1-a642-a85e45552a3e
+2026-09-15 08:28:01,992 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49243
+2026-09-15 08:28:01,992 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
