@@ -44,31 +44,12 @@ bars:
         - audio_visualizer
         - systray
         - open_meteo
-        - wallpapers
         - github
         - notifications
         - volume
         - clock
         - control_center
 widgets:
-  wallpapers:
-    type: "yasb.wallpapers.WallpapersWidget"
-    options:
-      label: "<span>\ue7aa</span>"
-      image_path: "C:/Users/amn/Pictures"
-      engine:
-        enabled: true
-        animation: "split"
-      gallery:
-        type: "strip"
-        image_width: 240
-        accent_color: "#fff"
-        orientation: "portrait"
-        image_corner_radius: 0
-      keybindings:
-        - keys: alt+e
-          action: toggle_gallery
-          screen: cursor
   taskbar:
     type: "yasb.taskbar.TaskbarWidget"
     options:

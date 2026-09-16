@@ -4,18 +4,18 @@
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
   "mouse_follows_focus": true,
-  "default_workspace_padding": 5,
-  "default_container_padding": 5,
+  "default_workspace_padding": 4,
+  "default_container_padding": 4,
   "border": true,
-  "border_width": 8,
+  "border_width": 6,
   "border_offset": -1,
   "theme": {
     "palette": "Base16",
-    "name": "Dracula",
-    "unfocused_border": "Base02",
+    "name": "PrimerDark",
+    "unfocused_border": "Base00",
     "bar_accent": "Base09",
-    "monocle_border": "Base08",
-    "single_border": "Base0A"
+    "monocle_border": "Base0D",
+    "single_border": "Base0F"
   },
   "display_index_preferences": {
     "0": "HCS0238-5&2524e507&0&UID264",
@@ -62,7 +62,6 @@
           "name": "Grid",
           "layout_rules": {
             "1": "BSP",
-            "2": "Columns",
             "4": "Grid"
           },
           "layout_options": {
@@ -81,6 +80,11 @@
     {
       "kind": "Title",
       "id": "Sticky Notes",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Riot Client",
       "matching_strategy": "Contains"
     }
   ]

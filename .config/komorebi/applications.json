@@ -2260,6 +2260,15 @@
       }
     ]
   },
+  "Riot Client": {
+    "floating_applications": [
+      {
+        "kind": "Exe",
+        "id": "Riot Client",
+        "matching_strategy": "Contains",
+      }
+    ]
+  },
   "Roblox FPS Unlocker": {
     "tray_and_multi_window": [
       {
