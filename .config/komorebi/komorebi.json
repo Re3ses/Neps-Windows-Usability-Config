@@ -59,7 +59,7 @@
     {
       "workspaces": [
         {
-          "name": "Grid",
+          "name": "Adaptive Grid",
           "layout_rules": {
             "1": "BSP",
             "4": "Grid"
@@ -67,6 +67,10 @@
           "layout_options": {
             "column_ratios": [0.6]
           }
+        },
+        {
+          "name": "Grid",
+          "layout": "Grid"
         }
       ]
     }
