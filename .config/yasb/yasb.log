@@ -4904,3 +4904,5 @@ could not find expected ':'
 2026-09-17 08:42:43,261 [INFO] [Dummy-13] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-b18467a2-b230-11f1-a026-a85e45552a3e
 2026-09-17 08:42:43,525 [DEBUG] [MainThread] [systray_widget/systray.py:257]: Sending TaskbarCreated message: 49244
 2026-09-17 08:42:43,525 [DEBUG] [MainThread] [systray_widget/systray.py:259]: Systray icons refreshed
+2026-09-17 13:19:29,222 [DEBUG] [Thread-11] [root/watcher.py:84]: Stylesheet modified: c:\users\mis\neps-windows-usability-config\.config\yasb\styles.css
+2026-09-17 13:19:55,828 [INFO] [MainThread] [root/service.py:223]: Quick Launch rebuilding app list after install/uninstall detected
