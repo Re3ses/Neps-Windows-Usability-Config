@@ -86,6 +86,11 @@
       "kind": "Title",
       "id": "Riot Client",
       "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Prism Launcher",
+      "matching_strategy": "StartsWith"
     }
   ]
 }
