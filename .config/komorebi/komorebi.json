@@ -96,5 +96,27 @@
       "id": "Prism Launcher",
       "matching_strategy": "StartsWith"
     }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "Sticky Notes",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "League",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Title",
+      "id": "Riot Client",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "PureRef",
+      "matching_strategy": "StartsWith"
+    }
   ]
 }
