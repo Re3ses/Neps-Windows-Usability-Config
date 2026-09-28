@@ -3,7 +3,7 @@
   "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "mouse_follows_focus": true,
+  "mouse_follows_focus": false,
   "default_workspace_padding": 4,
   "default_container_padding": 4,
   "border": true,
@@ -18,8 +18,8 @@
     "single_border": "Base0F"
   },
   "display_index_preferences": {
-    "0": "HCS0238-5&2524e507&0&UID264",
-    "1": "HGC2380-5&2524e507&0&UID268",
+    "0": "HCS0238-5&2524e507&0&UID268",
+    "1": "HGC2380-5&2524e507&0&UID264",
     "2": "MSI4BA9-4&3623efdd&0&UID206371",
     "3": "ACI23C4-4&3623efdd&0&UID214571"
   },
@@ -44,7 +44,7 @@
           "layout_options": {
             "row_ratios": [0.4]
           },
-           "layout_flip": "Vertical"
+          "layout_flip": "Vertical"
         }
       ]
     },
@@ -96,5 +96,27 @@
       "id": "Prism Launcher",
       "matching_strategy": "StartsWith"
     }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "Minecraft",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Krita",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "League of Legends",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "League",
+      "matching_strategy": "Contains"
+    },
   ]
 }
