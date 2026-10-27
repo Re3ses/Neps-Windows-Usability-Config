@@ -37,6 +37,7 @@ bars:
     widgets:
       left:
         - quick_launch
+        - komorebi_control
         - komorebi_workspaces
       center:
         - taskbar
@@ -183,6 +184,25 @@ widgets:
           button_menu_icon: "\ue76c"
       callbacks:
         on_left: "toggle_menu"
+  komorebi_control:
+    type: "komorebi.control.KomorebiControlWidget"
+    options:
+      label: "⚙"
+      run_ahk: false
+      run_whkd: false
+      run_masir: false
+      show_version: true
+      komorebi_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: normal
+        border_color: System
+        alignment: left
+        direction: down
+        offset_top: 6
+        offset_left: 0
+      callbacks:
+        on_left: toggle_menu
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:

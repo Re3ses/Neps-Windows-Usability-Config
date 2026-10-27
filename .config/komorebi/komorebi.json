@@ -95,7 +95,13 @@
       "kind": "Title",
       "id": "Prism Launcher",
       "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Title",
+      "id": "LAN Messenger",
+      "matching_strategy": "Contains"
     }
+
   ],
   "ignore_rules": [
     {
