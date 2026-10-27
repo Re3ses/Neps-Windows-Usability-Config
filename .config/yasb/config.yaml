@@ -23,9 +23,10 @@ bars:
       round_corners: false
       border_color: None
     window_flags:
-      always_on_top: true
+      always_on_top: false
       windows_app_bar: true
       auto_hide: false
+      hide_on_fullscreen: true
     dimensions:
       width: "100%"
       height: 36
